@@ -5,3 +5,13 @@
 .input-area {
     margin: 50px;
 }
+
+.niceList {
+    margin: 50px;
+    background-color: Green;
+}
+
+.naughtyList {
+    margin: 50px;
+    background-color: red;
+}

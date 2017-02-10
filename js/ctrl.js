@@ -2,10 +2,10 @@
 (function() {
 	'use strict';
 
-angular.module('myApp').controller('myCtrl', function($scope){
+angular.module('myApp').controller('myCtrl', function($scope, mySrv){
 
-    $scope.niceList = [];
-    $scope.naughtyList = [];
+    $scope.niceList = mySrv.niceList;
+    $scope.naughtyList = mySrv.naughtyList;
 
     $scope.addNewPerson = function(){
             var differenceScore = $scope.niceScore - $scope.naughtyScore;
