@@ -1,3 +1,7 @@
 .input-area > span {
     display: block;
 }
+
+.input-area {
+    margin: 50px;
+}
