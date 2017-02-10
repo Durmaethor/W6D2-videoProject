@@ -1,3 +1,7 @@
+
+(function() {
+	'use strict';
+
 angular.module('myApp').controller('myCtrl', function($scope){
 
     $scope.niceList = [];
@@ -26,4 +30,6 @@ angular.module('myApp').controller('myCtrl', function($scope){
     }
     */
     
-});
+    });
+
+})();
