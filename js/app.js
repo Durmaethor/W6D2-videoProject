@@ -1,0 +1,1 @@
+anglur.module('myApp', []);
