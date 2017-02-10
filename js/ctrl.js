@@ -1,6 +1,21 @@
 angular.module('myApp').controller('myCtrl', function($scope){
 
-    $scope.test = "Booger"
+    $scope.niceList = [];
+    $scope.naughtyList = [];
+
+    $scope.addNewPerson = function(){
+            var differenceScore = $scope.niceScore - $scope.naughtyScore;
+
+            if(differenceScore >= 10) {
+                $scope.niceList.push();
+            } else {
+                $scope.naughtyList.push({
+                    name: $scope.name,
+                    score: differenceScore
+                });
+
+        }
+   }
 
     /* {
 
