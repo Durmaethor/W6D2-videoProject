@@ -11,15 +11,18 @@ angular.module('myApp').controller('myCtrl', function($scope){
             var differenceScore = $scope.niceScore - $scope.naughtyScore;
 
             if(differenceScore >= 10) {
-                $scope.niceList.push();
+                $scope.niceList.push(buildPerson(differenceScore));
             } else {
-                $scope.naughtyList.push({
-                    name: $scope.name,
-                    score: differenceScore
-                });
+                $scope.naughtyList.push(buildPerson(differenceScore));
+            }
+    }
 
+    function buildPerson(differenceScore){
+        return {
+            name: $scope.name,
+            score: differenceScore
         }
-   }
+    }
 
     /* {
 
