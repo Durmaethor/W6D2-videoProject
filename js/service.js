@@ -7,7 +7,7 @@
         this.niceList = [];
         this.naughtyList = [];
 
-        this.addPerson = function(personObj){
+        this.addNewPerson = function(personObj){
                 var differenceScore = personObj.niceScore - personObj.naughtyScore;
 
                 var person = buildPerson(personObj.name, differenceScore);

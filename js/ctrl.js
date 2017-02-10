@@ -9,7 +9,7 @@ angular.module('myApp').controller('myCtrl', function($scope, niceService){
 
     $scope.addNewPerson = function(){
         var person = buildPerson();
-        niceService.addPerson(person);
+        niceService.addNewPerson(person);
     }
 
     function buildPerson(){
