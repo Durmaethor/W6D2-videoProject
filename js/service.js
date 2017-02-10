@@ -10,12 +10,14 @@
         this.addPerson = function(personObj){
                 var differenceScore = personObj.niceScore - personObj.naughtyScore;
 
-                if(differenceScore >= 10) {
-                    niceList.push(buildPerson(personObj.name, differenceScore));
-                } else {
-                    naughtyList.push(buildPerson(personObj.name, differenceScore));
+                var person = buildPerson(personObj.name, differenceScore);
+
+                    if(differenceScore >= 10) {
+                        niceList.push(person);
+                    } else {
+                        naughtyList.push(person);
+                    }
                 }
-            }
     
         function buildPerson(name, differenceScore){
         return {
