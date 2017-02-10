@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css"></link>
 </head>
 <body ng-controller="myCtrl">
 
-    {{test}}
-
+    <div class="input-area">
+        <span>Name:</span> <input ng-model="name"></input>
+        <span>Nice Score:</span> <input type="number" ng-model="niceScore"></input>
+        <span>Naughty Score:</span> <input type="number" ng-model="naughtyScore"></input>
+    </div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script> 
    <script src="js/app.js"></script>
